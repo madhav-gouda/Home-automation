@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | AVENIR AUTOMATION</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">AVENIR AUTOMATION</div>
+            <div class="nav-links">
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('services') }}">Services</a>
+                <a href="{{ url_for('products') }}">Products</a>
+                <a href="{{ url_for('projects') }}">Projects</a>
+                <a href="{{ url_for('about') }}">About</a>
+                <a href="{{ url_for('contact') }}">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section" style="padding-top: 150px;">
+        <div class="container">
+            <h2>Our Services</h2>
+            
+            <!-- Home Automation -->
+            <div class="service-category">
+                <h3><i class="fas fa-home"></i> Home Automation</h3>
+                <ul class="service-list">
+                    <li><i class="fas fa-check-circle"></i> Home & Building Automation</li>
+                    <li><i class="fas fa-check-circle"></i> BMS (Building Management System)</li>
+                    <li><i class="fas fa-check-circle"></i> Guest Room Automation</li>
+                    <li><i class="fas fa-check-circle"></i> Smart Lighting (RGB, scenes)</li>
+                    <li><i class="fas fa-check-circle"></i> Curtain Automation</li>
+                    <li><i class="fas fa-check-circle"></i> HVAC Control</li>
+                    <li><i class="fas fa-check-circle"></i> Fan Control</li>
+                </ul>
+            </div>
+            
+            <!-- Security Systems -->
+            <div class="service-category">
+                <h3><i class="fas fa-lock"></i> Security Systems</h3>
+                <ul class="service-list">
+                    <li><i class="fas fa-check-circle"></i> CCTV (IP Cameras)</li>
+                    <li><i class="fas fa-check-circle"></i> Door Access Systems</li>
+                    <li><i class="fas fa-check-circle"></i> Motion Sensors</li>
+                    <li><i class="fas fa-check-circle"></i> Intrusion Protection</li>
+                </ul>
+            </div>
+            
+            <!-- Access Control -->
+            <div class="service-category">
+                <h3><i class="fas fa-door-open"></i> Access Control</h3>
+                <ul class="service-list">
+                    <li><i class="fas fa-check-circle"></i> Video Door Phone</li>
+                    <li><i class="fas fa-check-circle"></i> Digital Locks</li>
+                    <li><i class="fas fa-check-circle"></i> Gate Automation</li>
+                </ul>
+            </div>
+            
+            <!-- AV & Entertainment -->
+            <div class="service-category">
+                <h3><i class="fas fa-film"></i> AV & Entertainment</h3>
+                <ul class="service-list">
+                    <li><i class="fas fa-check-circle"></i> Home Theatre</li>
+                    <li><i class="fas fa-check-circle"></i> Multi-room Audio</li>
+                    <li><i class="fas fa-check-circle"></i> AV Integration</li>
+                    <li><i class="fas fa-check-circle"></i> Acoustic Design</li>
+                </ul>
+            </div>
+            
+            <!-- Smart Living Add-ons -->
+            <div class="service-category">
+                <h3><i class="fas fa-plus-circle"></i> Smart Living Add-ons</h3>
+                <ul class="service-list">
+                    <li><i class="fas fa-check-circle"></i> Central Vacuum System</li>
+                    <li><i class="fas fa-check-circle"></i> Mechanical Ventilation (Fresh Air)</li>
+                </ul>
+            </div>
+            
+            <!-- Unique Features -->
+            <div style="margin-top: 40px; background: var(--bg-card); padding: 30px; border-radius: 20px;">
+                <h3 style="color: var(--accent-gold);">🔥 Unique Features</h3>
+                <div class="grid-3" style="margin-top: 20px;">
+                    <div><i class="fas fa-lightbulb" style="color: var(--accent-gold);"></i> Adaptive Lighting & RGB</div>
+                    <div><i class="fas fa-microphone-alt" style="color: var(--accent-gold);"></i> Voice Control (Alexa/Google)</div>
+                    <div><i class="fas fa-film" style="color: var(--accent-gold);"></i> Scenes: Movie / Dinner / Relax</div>
+                    <div><i class="fas fa-mobile-alt" style="color: var(--accent-gold);"></i> Full App-Based Control</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+    <div class="footer-container">
+
+    <!-- Left Section -->
+    <div class="footer-section">
+      <h2 class="logo">AVENIR</h2>
+      <p>Making homes smarter, safer,<br> and more efficient.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="{{ url_for('services') }}">Services</a></li>
+        <li><a href="{{ url_for('products') }}">Products</a></li>
+        <li><a href="{{ url_for('projects') }}">Projects</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>📍 Hebbal Kempapura, Bengaluru, Karnataka</p>
+      <p>📞 9980029427</p>
+      <p>✉ help@homeiq.com</p>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2025 KeyNex. All rights reserved.
+    </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

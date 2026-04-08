@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products | AVENIR AUTOMATION</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">AVENIR AUTOMATION</div>
+            <div class="nav-links">
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('services') }}">Services</a>
+                <a href="{{ url_for('products') }}">Products</a>
+                <a href="{{ url_for('projects') }}">Projects</a>
+                <a href="{{ url_for('about') }}">About</a>
+                <a href="{{ url_for('contact') }}">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section" style="padding-top: 150px;">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="grid-3">
+                <div class="card"><i class="fas fa-toggle-on"></i><h3>Smart Switches</h3><p>Minimalist design, touch & voice ready.</p></div>
+                <div class="card"><i class="fas fa-tablet-alt"></i><h3>Touch Panels</h3><p>Centralized control with elegant interface.</p></div>
+                <div class="card"><i class="fas fa-video"></i><h3>Cameras</h3><p>4K IP cameras with night vision.</p></div>
+                <div class="card"><i class="fas fa-lock"></i><h3>Digital Locks</h3><p>Fingerprint, RFID, and PIN access.</p></div>
+                <div class="card"><i class="fas fa-motion-sensor"></i><h3>Sensors</h3><p>Motion, door/window, leak detectors.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+    <div class="footer-container">
+
+    <!-- Left Section -->
+    <div class="footer-section">
+      <h2 class="logo">AVENIR</h2>
+      <p>Making homes smarter, safer,<br> and more efficient.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="{{ url_for('services') }}">Services</a></li>
+        <li><a href="{{ url_for('products') }}">Products</a></li>
+        <li><a href="{{ url_for('projects') }}">Projects</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>📍 Hebbal Kempapura, Bengaluru, Karnataka</p>
+      <p>📞 9980029427</p>
+      <p>✉ help@homeiq.com</p>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2025 KeyNex. All rights reserved.
+    </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
